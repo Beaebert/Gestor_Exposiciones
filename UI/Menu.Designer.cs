@@ -59,12 +59,14 @@ namespace TrabajoIntegradorEnvios
             ingresarToolStripMenuItem.Name = "ingresarToolStripMenuItem";
             ingresarToolStripMenuItem.Size = new Size(224, 26);
             ingresarToolStripMenuItem.Text = "Ingresar";
+            ingresarToolStripMenuItem.Click += this.ingresarToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             salirToolStripMenuItem.Size = new Size(224, 26);
             salirToolStripMenuItem.Text = "Salir";
+            salirToolStripMenuItem.Click += this.salirToolStripMenuItem_Click;
             // 
             // Menu
             // 

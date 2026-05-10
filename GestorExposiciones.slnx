@@ -1,4 +1,7 @@
 <Solution>
-  <Project Path="BE/BE.csproj" />
+  <Project Path="BE/BE.csproj" Id="7f3c8884-db2a-41cb-916a-1ac1ca68e4da" />
   <Project Path="BLL/BLL.csproj" Id="ec63d5ce-b7f9-4321-8941-58fedc666a99" />
+  <Project Path="DAL/DAL.csproj" Id="384a2113-0499-4687-9212-2459733db36d" />
+  <Project Path="Seguridad/Seguridad.csproj" Id="4172eb95-39a5-4da8-a6a8-98e6816b59b7" />
+  <Project Path="UI/UI.csproj" Id="4353ce20-ba83-42ec-a53c-431d5d8a2351" />
 </Solution>

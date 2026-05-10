@@ -9,6 +9,16 @@ namespace TrabajoIntegradorEnvios
         {
             InitializeComponent();
         }
+        private void ingresarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ingresarForm = new Ingresar();
+            ingresarForm.ShowDialog();
+        }
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 
     static class Program
