@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BE/BE.csproj" />
+  <Project Path="BLL/BLL.csproj" Id="ec63d5ce-b7f9-4321-8941-58fedc666a99" />
+</Solution>
