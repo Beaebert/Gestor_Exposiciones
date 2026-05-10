@@ -34,13 +34,15 @@ namespace TrabajoIntegradorEnvios
             archivoToolStripMenuItem = new ToolStripMenuItem();
             ingresarToolStripMenuItem = new ToolStripMenuItem();
             salirToolStripMenuItem = new ToolStripMenuItem();
+            crearToolStripMenuItem = new ToolStripMenuItem();
+            muestraToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem, crearToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1141, 28);
@@ -59,14 +61,27 @@ namespace TrabajoIntegradorEnvios
             ingresarToolStripMenuItem.Name = "ingresarToolStripMenuItem";
             ingresarToolStripMenuItem.Size = new Size(224, 26);
             ingresarToolStripMenuItem.Text = "Ingresar";
-            ingresarToolStripMenuItem.Click += this.ingresarToolStripMenuItem_Click;
+            ingresarToolStripMenuItem.Click += ingresarToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             salirToolStripMenuItem.Size = new Size(224, 26);
             salirToolStripMenuItem.Text = "Salir";
-            salirToolStripMenuItem.Click += this.salirToolStripMenuItem_Click;
+            salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
+            // 
+            // crearToolStripMenuItem
+            // 
+            crearToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { muestraToolStripMenuItem });
+            crearToolStripMenuItem.Name = "crearToolStripMenuItem";
+            crearToolStripMenuItem.Size = new Size(58, 24);
+            crearToolStripMenuItem.Text = "Crear";
+            // 
+            // muestraToolStripMenuItem
+            // 
+            muestraToolStripMenuItem.Name = "muestraToolStripMenuItem";
+            muestraToolStripMenuItem.Size = new Size(224, 26);
+            muestraToolStripMenuItem.Text = "Muestra";
             // 
             // Menu
             // 
@@ -91,5 +106,7 @@ namespace TrabajoIntegradorEnvios
         private ToolStripMenuItem archivoToolStripMenuItem;
         private ToolStripMenuItem ingresarToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem;
+        private ToolStripMenuItem crearToolStripMenuItem;
+        private ToolStripMenuItem muestraToolStripMenuItem;
     }
 }

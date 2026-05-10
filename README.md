@@ -32,7 +32,7 @@ El modelo de dominio expone los 5 principios de la Programación Orientada a Obj
 
 > El diagrama fue aprobado por el docente como parte del TP N1.
 
-![Diagrama UML](UI/UML_Gestor_Exposiciones.png)
+![Diagrama UML](UI/UML_Gestor_Exposiciones.jpg)
 
 ### Entidades del sistema
 
