@@ -1,3 +1,4 @@
+
 # 🎨 Gestor de Exposiciones
 
 > Aplicación de escritorio desarrollada en **C# .NET · WinForms · SQL Server**  
@@ -211,3 +212,7 @@ Analista Programadora · Full-Stack .NET Developer
 📍 Buenos Aires, Argentina  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/beatrizebert)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Beaebert)
+=======
+# Gestor_Exposiciones
+Este es un programa para gestionar la información para muestras de arte. Construido en C# y con modularidad de capas.
+
