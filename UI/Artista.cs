@@ -8,14 +8,14 @@ using System.Windows.Forms;
 
 namespace UI
 {
-    public partial class Muestra : Form
+    public partial class Artista : Form
     {
-        public Muestra()
+        public Artista()
         {
             InitializeComponent();
         }
 
-        private void cancelarMuestra_Click(object sender, EventArgs e)
+        private void cancelarArtista_Click(object sender, EventArgs e)
         {
             this.Close();
         }

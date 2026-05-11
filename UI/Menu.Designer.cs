@@ -36,6 +36,10 @@ namespace TrabajoIntegradorEnvios
             salirToolStripMenuItem = new ToolStripMenuItem();
             crearToolStripMenuItem = new ToolStripMenuItem();
             muestraToolStripMenuItem = new ToolStripMenuItem();
+            artistaToolStripMenuItem = new ToolStripMenuItem();
+            obraToolStripMenuItem = new ToolStripMenuItem();
+            cuadroToolStripMenuItem = new ToolStripMenuItem();
+            informeToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -72,7 +76,7 @@ namespace TrabajoIntegradorEnvios
             // 
             // crearToolStripMenuItem
             // 
-            crearToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { muestraToolStripMenuItem });
+            crearToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { muestraToolStripMenuItem, artistaToolStripMenuItem, obraToolStripMenuItem, informeToolStripMenuItem });
             crearToolStripMenuItem.Name = "crearToolStripMenuItem";
             crearToolStripMenuItem.Size = new Size(58, 24);
             crearToolStripMenuItem.Text = "Crear";
@@ -82,6 +86,31 @@ namespace TrabajoIntegradorEnvios
             muestraToolStripMenuItem.Name = "muestraToolStripMenuItem";
             muestraToolStripMenuItem.Size = new Size(224, 26);
             muestraToolStripMenuItem.Text = "Muestra";
+            // 
+            // artistaToolStripMenuItem
+            // 
+            artistaToolStripMenuItem.Name = "artistaToolStripMenuItem";
+            artistaToolStripMenuItem.Size = new Size(224, 26);
+            artistaToolStripMenuItem.Text = "Artista";
+            // 
+            // obraToolStripMenuItem
+            // 
+            obraToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cuadroToolStripMenuItem });
+            obraToolStripMenuItem.Name = "obraToolStripMenuItem";
+            obraToolStripMenuItem.Size = new Size(224, 26);
+            obraToolStripMenuItem.Text = "Obra";
+            // 
+            // cuadroToolStripMenuItem
+            // 
+            cuadroToolStripMenuItem.Name = "cuadroToolStripMenuItem";
+            cuadroToolStripMenuItem.Size = new Size(224, 26);
+            cuadroToolStripMenuItem.Text = "Cuadro";
+            // 
+            // informeToolStripMenuItem
+            // 
+            informeToolStripMenuItem.Name = "informeToolStripMenuItem";
+            informeToolStripMenuItem.Size = new Size(224, 26);
+            informeToolStripMenuItem.Text = "Informe";
             // 
             // Menu
             // 
@@ -108,5 +137,9 @@ namespace TrabajoIntegradorEnvios
         private ToolStripMenuItem salirToolStripMenuItem;
         private ToolStripMenuItem crearToolStripMenuItem;
         private ToolStripMenuItem muestraToolStripMenuItem;
+        private ToolStripMenuItem artistaToolStripMenuItem;
+        private ToolStripMenuItem obraToolStripMenuItem;
+        private ToolStripMenuItem cuadroToolStripMenuItem;
+        private ToolStripMenuItem informeToolStripMenuItem;
     }
 }
