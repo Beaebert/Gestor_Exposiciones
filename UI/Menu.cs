@@ -1,36 +1,39 @@
+using System;
 using System.Windows.Forms;
 using System.Drawing;
-using UI;
+using System.IO;
 
-namespace TrabajoIntegradorEnvios
+namespace TrabajoIntegradorGestionDeExposiciones.UI
 {
     public partial class Menu : Form
     {
         public Menu()
         {
             InitializeComponent();
+            MuestraToolStripMenuItem.Enabled = false;
+            ArtistaToolStripMenuItem.Enabled = false;
         }
+
+
+
         private void IngresarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Log ventanaLogin = new Log(); //Toma el formulario Log y asigna a ventanaLogin
-            ventanaLogin.MdiParent = this; //dice que el formulario Menu es el padre que lo contiene
-            ventanaLogin.Show();   //muestra
-
             using (Log ventanaLog = new Log())
             {
-                if (ventanaLogin.ShowDialog() == DialogResult.OK)
+                if (ventanaLog.ShowDialog() == DialogResult.OK)
                 {
-                    this.menuMuestras.Enabled = true;
-                    this.menuArtistas.Enabled = true;
+                    this.MuestraToolStripMenuItem.Enabled = true;
+                    this.ArtistaToolStripMenuItem.Enabled = true;
 
                     //Deshabilitar el botón de "Ingresar" para que no se vuelva a loguear estando logueado
-                    this.ingresarToolStripMenuItem.Enabled = false;
+                    this.IngresarToolStripMenuItem.Enabled = false;
                 }
             }
         }
         private void SalirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            // Cierra el formulario principal; si es la ventana principal de la app, la aplicación terminará.
+            Close();
         }
 
         private void InformeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -45,6 +48,7 @@ namespace TrabajoIntegradorEnvios
             }
             MessageBox.Show("Informe generado con éxito en la carpeta del programa.");
         }
+    }
 
     static class Program
     {

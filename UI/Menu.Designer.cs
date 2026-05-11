@@ -1,11 +1,13 @@
-﻿
-namespace TrabajoIntegradorEnvios
+﻿using System;
+using System.ComponentModel;
+using System.Drawing;
+using System.Windows.Forms;
+using UI;
+
+namespace TrabajoIntegradorGestionDeExposiciones.UI
 {
-    partial class Menu
+    partial class Menu : Form
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
@@ -23,95 +25,91 @@ namespace TrabajoIntegradorEnvios
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             menuStrip1 = new MenuStrip();
-            archivoToolStripMenuItem = new ToolStripMenuItem();
-            ingresarToolStripMenuItem = new ToolStripMenuItem();
-            salirToolStripMenuItem = new ToolStripMenuItem();
-            crearToolStripMenuItem = new ToolStripMenuItem();
-            muestraToolStripMenuItem = new ToolStripMenuItem();
-            artistaToolStripMenuItem = new ToolStripMenuItem();
-            obraToolStripMenuItem = new ToolStripMenuItem();
-            cuadroToolStripMenuItem = new ToolStripMenuItem();
-            informeToolStripMenuItem = new ToolStripMenuItem();
+            ArchivoToolStripMenuItem = new ToolStripMenuItem();
+            IngresarToolStripMenuItem = new ToolStripMenuItem();
+            SalirToolStripMenuItem = new ToolStripMenuItem();
+            CrearToolStripMenuItem = new ToolStripMenuItem();
+            MuestraToolStripMenuItem = new ToolStripMenuItem();
+            ArtistaToolStripMenuItem = new ToolStripMenuItem();
+            ObraToolStripMenuItem = new ToolStripMenuItem();
+            CuadroToolStripMenuItem = new ToolStripMenuItem();
+            InformeToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem, crearToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { ArchivoToolStripMenuItem, CrearToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1141, 28);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
-            // archivoToolStripMenuItem
+            // ArchivoToolStripMenuItem
             // 
-            archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ingresarToolStripMenuItem, salirToolStripMenuItem });
-            archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            archivoToolStripMenuItem.Size = new Size(73, 24);
-            archivoToolStripMenuItem.Text = "Archivo";
+            ArchivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { IngresarToolStripMenuItem, SalirToolStripMenuItem });
+            ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem";
+            ArchivoToolStripMenuItem.Size = new Size(73, 24);
+            ArchivoToolStripMenuItem.Text = "Archivo";
             // 
-            // ingresarToolStripMenuItem
+            // IngresarToolStripMenuItem
             // 
-            ingresarToolStripMenuItem.Name = "ingresarToolStripMenuItem";
-            ingresarToolStripMenuItem.Size = new Size(224, 26);
-            ingresarToolStripMenuItem.Text = "Ingresar";
-            ingresarToolStripMenuItem.Click += IngresarToolStripMenuItem_Click;
+            IngresarToolStripMenuItem.Name = "IngresarToolStripMenuItem";
+            IngresarToolStripMenuItem.Size = new Size(224, 26);
+            IngresarToolStripMenuItem.Text = "Ingresar";
+            IngresarToolStripMenuItem.Click += IngresarToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem
             // 
-            salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(224, 26);
-            salirToolStripMenuItem.Text = "Salir";
-            salirToolStripMenuItem.Click += SalirToolStripMenuItem_Click;
+            SalirToolStripMenuItem.Name = "SalirToolStripMenuItem";
+            SalirToolStripMenuItem.Size = new Size(224, 26);
+            SalirToolStripMenuItem.Text = "Salir";
+            SalirToolStripMenuItem.Click += SalirToolStripMenuItem_Click;
             // 
-            // crearToolStripMenuItem
+            // CrearToolStripMenuItem
             // 
-            crearToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { muestraToolStripMenuItem, artistaToolStripMenuItem, obraToolStripMenuItem, informeToolStripMenuItem });
-            crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            crearToolStripMenuItem.Size = new Size(58, 24);
-            crearToolStripMenuItem.Text = "Crear";
+            CrearToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { MuestraToolStripMenuItem, ArtistaToolStripMenuItem, ObraToolStripMenuItem, InformeToolStripMenuItem });
+            CrearToolStripMenuItem.Name = "CrearToolStripMenuItem";
+            CrearToolStripMenuItem.Size = new Size(58, 24);
+            CrearToolStripMenuItem.Text = "Crear";
             // 
-            // muestraToolStripMenuItem
+            // MuestraToolStripMenuItem
             // 
-            muestraToolStripMenuItem.Name = "muestraToolStripMenuItem";
-            muestraToolStripMenuItem.Size = new Size(224, 26);
-            muestraToolStripMenuItem.Text = "Muestra";
+            MuestraToolStripMenuItem.Name = "MuestraToolStripMenuItem";
+            MuestraToolStripMenuItem.Size = new Size(224, 26);
+            MuestraToolStripMenuItem.Text = "Muestra";
             // 
             // artistaToolStripMenuItem
             // 
-            artistaToolStripMenuItem.Name = "artistaToolStripMenuItem";
-            artistaToolStripMenuItem.Size = new Size(224, 26);
-            artistaToolStripMenuItem.Text = "Artista";
+            ArtistaToolStripMenuItem.Name = "ArtistaToolStripMenuItem";
+            ArtistaToolStripMenuItem.Size = new Size(224, 26);
+            ArtistaToolStripMenuItem.Text = "Artista";
             // 
-            // obraToolStripMenuItem
+            // ObraToolStripMenuItem
             // 
-            obraToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cuadroToolStripMenuItem });
-            obraToolStripMenuItem.Name = "obraToolStripMenuItem";
-            obraToolStripMenuItem.Size = new Size(224, 26);
-            obraToolStripMenuItem.Text = "Obra";
+            ObraToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { CuadroToolStripMenuItem });
+            ObraToolStripMenuItem.Name = "ObraToolStripMenuItem";
+            ObraToolStripMenuItem.Size = new Size(224, 26);
+            ObraToolStripMenuItem.Text = "Obra";
             // 
-            // cuadroToolStripMenuItem
+            // CuadroToolStripMenuItem
             // 
-            cuadroToolStripMenuItem.Name = "cuadroToolStripMenuItem";
-            cuadroToolStripMenuItem.Size = new Size(224, 26);
-            cuadroToolStripMenuItem.Text = "Cuadro";
+            CuadroToolStripMenuItem.Name = "CuadroToolStripMenuItem";
+            CuadroToolStripMenuItem.Size = new Size(224, 26);
+            CuadroToolStripMenuItem.Text = "Cuadro";
             // 
             // informeToolStripMenuItem
             // 
-            informeToolStripMenuItem.Name = "informeToolStripMenuItem";
-            informeToolStripMenuItem.Size = new Size(224, 26);
-            informeToolStripMenuItem.Text = "Informe";
-            informeToolStripMenuItem.Click += this.InformeToolStripMenuItem_Click;
+            InformeToolStripMenuItem.Name = "InformeToolStripMenuItem";
+            InformeToolStripMenuItem.Size = new Size(224, 26);
+            InformeToolStripMenuItem.Text = "Informe";
+            InformeToolStripMenuItem.Click += this.InformeToolStripMenuItem_Click;
             // 
             // Menu
             // 
@@ -133,14 +131,14 @@ namespace TrabajoIntegradorEnvios
         #endregion
 
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem archivoToolStripMenuItem;
-        private ToolStripMenuItem ingresarToolStripMenuItem;
-        private ToolStripMenuItem salirToolStripMenuItem;
-        private ToolStripMenuItem crearToolStripMenuItem;
-        private ToolStripMenuItem muestraToolStripMenuItem;
-        private ToolStripMenuItem artistaToolStripMenuItem;
-        private ToolStripMenuItem obraToolStripMenuItem;
-        private ToolStripMenuItem cuadroToolStripMenuItem;
-        private ToolStripMenuItem informeToolStripMenuItem;
+        private ToolStripMenuItem ArchivoToolStripMenuItem;
+        private ToolStripMenuItem IngresarToolStripMenuItem;
+        private ToolStripMenuItem SalirToolStripMenuItem;
+        private ToolStripMenuItem CrearToolStripMenuItem;
+        private ToolStripMenuItem MuestraToolStripMenuItem;
+        private ToolStripMenuItem ArtistaToolStripMenuItem;
+        private ToolStripMenuItem ObraToolStripMenuItem;
+        private ToolStripMenuItem CuadroToolStripMenuItem;
+        private ToolStripMenuItem InformeToolStripMenuItem;
     }
 }

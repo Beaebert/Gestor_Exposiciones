@@ -15,16 +15,14 @@ namespace DAL
             // Recordar el SQL Embebido
             string query = "INSERT INTO Usuarios (NombreUsuario, Password) VALUES (@user, @pass)";
 
-            using (SqlConnection conexion = new SqlConnection(cadenaConexion))
-            {
-                SqlCommand cmd = new SqlCommand(query, conexion);
-                cmd.Parameters.AddWithValue("@user", usuario);
-                cmd.Parameters.AddWithValue("@pass", passwordEncriptada);
+            using SqlConnection conexion = new SqlConnection(cadenaConexion);
+            SqlCommand cmd = new SqlCommand(query, conexion);
+            cmd.Parameters.AddWithValue("@user", usuario);
+            cmd.Parameters.AddWithValue("@pass", passwordEncriptada);
 
-                conexion.Open();
-                int filasAfectadas = cmd.ExecuteNonQuery();
-                return filasAfectadas > 0; // Devuelve true si se guardó con éxito
-            }
+            conexion.Open();
+            int filasAfectadas = cmd.ExecuteNonQuery();
+            return filasAfectadas > 0; // Devuelve true si se guardó con éxito
         }
 
         // Método para verificar si el usuario y clave existen
