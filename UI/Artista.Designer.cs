@@ -69,6 +69,7 @@
             guardarArtista.TabIndex = 3;
             guardarArtista.Text = "Guardar";
             guardarArtista.UseVisualStyleBackColor = true;
+            guardarArtista.Click += guardarArtista_Click;
             // 
             // cancelarArtista
             // 

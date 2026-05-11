@@ -65,14 +65,14 @@ namespace TrabajoIntegradorEnvios
             ingresarToolStripMenuItem.Name = "ingresarToolStripMenuItem";
             ingresarToolStripMenuItem.Size = new Size(224, 26);
             ingresarToolStripMenuItem.Text = "Ingresar";
-            ingresarToolStripMenuItem.Click += ingresarToolStripMenuItem_Click;
+            ingresarToolStripMenuItem.Click += IngresarToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             salirToolStripMenuItem.Size = new Size(224, 26);
             salirToolStripMenuItem.Text = "Salir";
-            salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
+            salirToolStripMenuItem.Click += SalirToolStripMenuItem_Click;
             // 
             // crearToolStripMenuItem
             // 
@@ -111,6 +111,7 @@ namespace TrabajoIntegradorEnvios
             informeToolStripMenuItem.Name = "informeToolStripMenuItem";
             informeToolStripMenuItem.Size = new Size(224, 26);
             informeToolStripMenuItem.Text = "Informe";
+            informeToolStripMenuItem.Click += this.InformeToolStripMenuItem_Click;
             // 
             // Menu
             // 

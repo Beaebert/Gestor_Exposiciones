@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Muestra));
             groupBox1 = new GroupBox();
-            Espacio = new GroupBox();
-            TituloMuestra = new TextBox();
-            nombreEspacio = new TextBox();
-            txtDescripcionMuestra = new TextBox();
-            direccionEspacio = new TextBox();
-            numericCapacidad = new NumericUpDown();
-            dateTimeInicio = new DateTimePicker();
-            dateTimeCierre = new DateTimePicker();
-            FechaInicio = new Label();
             FechaCierre = new Label();
+            FechaInicio = new Label();
+            dateTimeCierre = new DateTimePicker();
+            dateTimeInicio = new DateTimePicker();
+            txtDescripcionMuestra = new TextBox();
+            TituloMuestra = new TextBox();
+            Espacio = new GroupBox();
             CapacidadEspacio = new Label();
+            numericCapacidad = new NumericUpDown();
+            direccionEspacio = new TextBox();
+            nombreEspacio = new TextBox();
             guardarMuestra = new Button();
             cancelarMuestra = new Button();
             groupBox1.SuspendLayout();
@@ -63,6 +63,56 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Muestra";
             // 
+            // FechaCierre
+            // 
+            FechaCierre.AutoSize = true;
+            FechaCierre.Location = new Point(620, 88);
+            FechaCierre.Name = "FechaCierre";
+            FechaCierre.Size = new Size(111, 20);
+            FechaCierre.TabIndex = 5;
+            FechaCierre.Text = "Fecha de Cierre";
+            // 
+            // FechaInicio
+            // 
+            FechaInicio.AutoSize = true;
+            FechaInicio.Location = new Point(620, 23);
+            FechaInicio.Name = "FechaInicio";
+            FechaInicio.Size = new Size(108, 20);
+            FechaInicio.TabIndex = 4;
+            FechaInicio.Text = "Fecha de Inicio";
+            // 
+            // dateTimeCierre
+            // 
+            dateTimeCierre.Location = new Point(552, 122);
+            dateTimeCierre.Name = "dateTimeCierre";
+            dateTimeCierre.Size = new Size(306, 27);
+            dateTimeCierre.TabIndex = 3;
+            // 
+            // dateTimeInicio
+            // 
+            dateTimeInicio.Location = new Point(552, 46);
+            dateTimeInicio.Name = "dateTimeInicio";
+            dateTimeInicio.Size = new Size(306, 27);
+            dateTimeInicio.TabIndex = 2;
+            // 
+            // txtDescripcionMuestra
+            // 
+            txtDescripcionMuestra.Location = new Point(16, 100);
+            txtDescripcionMuestra.Multiline = true;
+            txtDescripcionMuestra.Name = "txtDescripcionMuestra";
+            txtDescripcionMuestra.PlaceholderText = "Escriba la descripción de la muestra aquí";
+            txtDescripcionMuestra.ScrollBars = ScrollBars.Vertical;
+            txtDescripcionMuestra.Size = new Size(521, 81);
+            txtDescripcionMuestra.TabIndex = 1;
+            // 
+            // TituloMuestra
+            // 
+            TituloMuestra.Location = new Point(16, 37);
+            TituloMuestra.Name = "TituloMuestra";
+            TituloMuestra.PlaceholderText = "Escriba el Titulo aquí";
+            TituloMuestra.Size = new Size(226, 27);
+            TituloMuestra.TabIndex = 0;
+            // 
             // Espacio
             // 
             Espacio.Controls.Add(CapacidadEspacio);
@@ -76,39 +126,14 @@
             Espacio.TabStop = false;
             Espacio.Text = "Espacio";
             // 
-            // TituloMuestra
+            // CapacidadEspacio
             // 
-            TituloMuestra.Location = new Point(16, 37);
-            TituloMuestra.Name = "TituloMuestra";
-            TituloMuestra.PlaceholderText = "Escriba el Titulo aquí";
-            TituloMuestra.Size = new Size(226, 27);
-            TituloMuestra.TabIndex = 0;
-            // 
-            // nombreEspacio
-            // 
-            nombreEspacio.Location = new Point(16, 44);
-            nombreEspacio.Name = "nombreEspacio";
-            nombreEspacio.PlaceholderText = "Escriba el nombre del lugar aquí";
-            nombreEspacio.Size = new Size(380, 27);
-            nombreEspacio.TabIndex = 1;
-            // 
-            // txtDescripcionMuestra
-            // 
-            txtDescripcionMuestra.Location = new Point(16, 100);
-            txtDescripcionMuestra.Multiline = true;
-            txtDescripcionMuestra.Name = "txtDescripcionMuestra";
-            txtDescripcionMuestra.PlaceholderText = "Escriba la descripción de la muestra aquí";
-            txtDescripcionMuestra.ScrollBars = ScrollBars.Vertical;
-            txtDescripcionMuestra.Size = new Size(521, 81);
-            txtDescripcionMuestra.TabIndex = 1;
-            // 
-            // direccionEspacio
-            // 
-            direccionEspacio.Location = new Point(16, 114);
-            direccionEspacio.Name = "direccionEspacio";
-            direccionEspacio.PlaceholderText = "Escriba la dirección aquí";
-            direccionEspacio.Size = new Size(380, 27);
-            direccionEspacio.TabIndex = 2;
+            CapacidadEspacio.AutoSize = true;
+            CapacidadEspacio.Location = new Point(416, 80);
+            CapacidadEspacio.Name = "CapacidadEspacio";
+            CapacidadEspacio.Size = new Size(162, 20);
+            CapacidadEspacio.TabIndex = 6;
+            CapacidadEspacio.Text = "Capacidad de Personas";
             // 
             // numericCapacidad
             // 
@@ -120,46 +145,21 @@
             numericCapacidad.TabIndex = 3;
             numericCapacidad.Value = new decimal(new int[] { 10, 0, 0, 0 });
             // 
-            // dateTimeInicio
+            // direccionEspacio
             // 
-            dateTimeInicio.Location = new Point(552, 46);
-            dateTimeInicio.Name = "dateTimeInicio";
-            dateTimeInicio.Size = new Size(306, 27);
-            dateTimeInicio.TabIndex = 2;
+            direccionEspacio.Location = new Point(16, 114);
+            direccionEspacio.Name = "direccionEspacio";
+            direccionEspacio.PlaceholderText = "Escriba la dirección aquí";
+            direccionEspacio.Size = new Size(380, 27);
+            direccionEspacio.TabIndex = 2;
             // 
-            // dateTimeCierre
+            // nombreEspacio
             // 
-            dateTimeCierre.Location = new Point(552, 122);
-            dateTimeCierre.Name = "dateTimeCierre";
-            dateTimeCierre.Size = new Size(306, 27);
-            dateTimeCierre.TabIndex = 3;
-            // 
-            // FechaInicio
-            // 
-            FechaInicio.AutoSize = true;
-            FechaInicio.Location = new Point(620, 23);
-            FechaInicio.Name = "FechaInicio";
-            FechaInicio.Size = new Size(108, 20);
-            FechaInicio.TabIndex = 4;
-            FechaInicio.Text = "Fecha de Inicio";
-            // 
-            // FechaCierre
-            // 
-            FechaCierre.AutoSize = true;
-            FechaCierre.Location = new Point(620, 88);
-            FechaCierre.Name = "FechaCierre";
-            FechaCierre.Size = new Size(111, 20);
-            FechaCierre.TabIndex = 5;
-            FechaCierre.Text = "Fecha de Cierre";
-            // 
-            // CapacidadEspacio
-            // 
-            CapacidadEspacio.AutoSize = true;
-            CapacidadEspacio.Location = new Point(416, 80);
-            CapacidadEspacio.Name = "CapacidadEspacio";
-            CapacidadEspacio.Size = new Size(162, 20);
-            CapacidadEspacio.TabIndex = 6;
-            CapacidadEspacio.Text = "Capacidad de Personas";
+            nombreEspacio.Location = new Point(16, 44);
+            nombreEspacio.Name = "nombreEspacio";
+            nombreEspacio.PlaceholderText = "Escriba el nombre del lugar aquí";
+            nombreEspacio.Size = new Size(380, 27);
+            nombreEspacio.TabIndex = 1;
             // 
             // guardarMuestra
             // 
@@ -169,6 +169,7 @@
             guardarMuestra.TabIndex = 2;
             guardarMuestra.Text = "Guardar";
             guardarMuestra.UseVisualStyleBackColor = true;
+            guardarMuestra.Click += guardarMuestra_Click;
             // 
             // cancelarMuestra
             // 
