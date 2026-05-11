@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Archivos de variables de entorno y seguridad
+.env
+
+# Backups de SQL Server (Evita subir bases de datos pesadas)
+*.bak

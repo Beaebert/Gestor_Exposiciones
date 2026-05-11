@@ -195,12 +195,12 @@ GestorExposiciones/
 |---|---|
 | Diagrama UML | ✅ Aprobado |
 | Estructura de la solución | 🔄 En progreso |
-| Modelo de base de datos | ⏳ Pendiente |
-| Capa BE | ⏳ Pendiente |
-| Capa DAL | ⏳ Pendiente |
-| Capa BLL | ⏳ Pendiente |
-| Capa UI (formularios) | ⏳ Pendiente |
-| Login + Seguridad | ⏳ Pendiente |
+| Modelo de base de datos | ✅ Aprobado |
+| Capa BE | 🔄 En progreso |
+| Capa DAL | 🔄 En progreso |
+| Capa BLL | 🔄 En progreso |
+| Capa UI (formularios) | 🔄 En progreso |
+| Login + Seguridad | 🔄 En progreso |
 | Informes | ⏳ Pendiente |
 
 ---
